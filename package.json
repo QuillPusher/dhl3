@@ -1,10 +1,10 @@
 {
-  "name": "lab-site",
+  "name": "crweb",
   "version": "0.1.0",
-  "description": "Yale University's Digital Humanities Lab Website",
+  "description": "Compiler Research Website",
   "main": "index.js",
-  "repository": "https://github.com/YaleDHLab/dhlab-site.git",
-  "author": "duhaime <douglas.duhaime@gmail.com>",
+  "repository": "https://github.com/QuillPusher/dhl3.git",
+  "author": "name <name@gmail.com>",
   "license": "MIT",
   "babel": {
     "presets": [

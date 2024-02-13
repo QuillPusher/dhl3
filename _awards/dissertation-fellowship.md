@@ -1,8 +1,8 @@
 ---
-title: Dissertation Fellowship
+title: Clad
 order: 2
 image: '/assets/images/banners/sterling-nave.jpg'
-caption: The Nave in Sterling Memorial Library.
+caption: Clad.
 ---
 
-Graduate students are invited to apply for the DHLab’s digital dissertation fellowship, which will provide a stipend, space, community, mentorship, and mini-grant funding for relevant training and development costs for students building a digital dissertation component. Please check back in spring 2024 for details about how to apply.
+Clad enables automatic differentiation (AD) for C++. It is based on LLVM compiler infrastructure and is a plugin for Clang compiler. Clad is based on source code transformation. Given C++ source code of a mathematical function, it can automatically generate C++ code for computing derivatives of the function. It supports both forward-mode and reverse-mode AD.

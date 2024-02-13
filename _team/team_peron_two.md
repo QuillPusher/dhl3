@@ -1,11 +1,9 @@
 ---
-title: Workshops
-order: 4
-layout: resource
-image: '/assets/images/banners/franke-workshop-basu.jpg'
-caption: workshop
-include_workshops: true
+name: name name
+role: role
+image: /assets/images/about/team/CK-sq.jpg
+order: 1
+group: generalist_consultants
 ---
-
 
 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
