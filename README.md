@@ -12,7 +12,12 @@ The `past_associates.html` file includes liquid placeholders to pull values from
 
 ### _awards
 
-Markdowns in this folder are iterated, and the `title` attribute in each file is used by the `_includes\header\header.hmtl` file to create a specific list of nested dropdown menu in one of the top level navigation menu.
+Markdowns in this folder are iterated, and the `title` attribute in each file is used by the `_includes\header\header.hmtl` file to create a specific list of nested dropdown menu in one of the top level navigation menu. Example:
+
+```
+<a class='subheader' href='{{ site.baseurl }}/awards.html' role='menuitem' aria-label='awards'>Notable Projects</a>
+{% include header/header_links.html items=site.awards %}
+```
 
 ### _data
 
@@ -62,7 +67,12 @@ Different grid layouts (columns and boxes) that can be utilized when displaying 
 
 ### _includes\header
 
-- header.html: includes main menu code (can rename menu items here).
+- header.html: includes main menu code (can rename menu items here). You can also add nested menu items. The child menu items will be automatically listed based on the `title` attribute within the front matter of the selcted collection. For example, the following code within `{%...%}` creates child menus for previous entry based on the files placed in the `_resources` collection:
+
+```
+<a class='subheader' href='{{ site.baseurl }}/resources.html' role='menuitem' aria-label='Resources'>Sample Nested Menu</a>
+{% include header/header_links.html items=site.resources %}
+```      
 
 - header_links.html: generates page links for header menu items.
 
