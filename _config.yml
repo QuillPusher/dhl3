@@ -1,4 +1,4 @@
-baseurl: '/dhl3/'
+baseurl: '/dhl3'
 url: quillpusher.github.io
 
 dependencies:
@@ -93,21 +93,21 @@ defaults:
       layout: opportunity
 
 # social media
-twitter: YaleDHLab
-instagram: yaledhlab
-facebook: YaleDHLab
-github: YaleDHLab
-email: dhlab@yale.edu
-phone: 203-432-123
+#twitter: 
+#instagram:
+#facebook: 
+github: compiler-research
+#email: 
+#phone: 
 
 # newsletter url
-newsletter: 'https://subscribe.yale.edu/browse?search=digital+humanities'
+newsletter: ''
 
 # submit news url
-submit_news: 'https://docs.google.com/forms/d/1HvwWecpYODW3DoMVTnJy7beOMfechLPIiVhV5ekvYNI'
+submit_news: ''
 
 # request consultation
-consultation: 'https://docs.google.com/forms/d/e/1FAIpQLSe4Lyo8EEdoiTLosfnmOUNEsZZToCD_n7dZ10ypCerw4diJGA/viewform?usp=sf_link'
+consultation: ''
 
 # configure gems
 plugins:
@@ -115,7 +115,7 @@ plugins:
 
 # minify css and js with webpack
 keep_files:
-  - 'assets/bundle.js'
+#  - 'assets/bundle.js'
   - 'assets/js/search/index.json'
   - 'assets/js/search/id-to-metadata.json'
 

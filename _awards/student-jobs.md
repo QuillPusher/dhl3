@@ -1,12 +1,16 @@
 ---
-title: Graduate Student Jobs
+title: Vectorized Automatic Differentiation
 order: 3
 image: '/assets/images/banners/sterling-nave.jpg'
-caption: The Nave in Sterling Memorial Library.
+caption: Vectorized Automatic Differentiation.
 ---
 
-Are you a Yale graduate student interested in humanistic questions and in building professional experience and expertise on digital humanities projects in a client-facing role? The Yale DHLab welcomes applicants to our DH Consultant positions. No prior DH experience is necessary, but applicants must complete [the DH Foundations workshop series](https://dhlab.yale.edu/resources/workshops.html) (offered through the DHLab once per semester) within six months of applying.  
+Vectorized Forward Mode Automatic Differentiation is a computational technique that combines two powerful concepts: vectorization and forward mode automatic differentiation. This approach is used to efficiently compute derivatives of functions with respect to multiple input variables by taking advantage of both parallel processing capabilities and the structure of the computation graph.
 
-DH Consultants will commit to holding consultations in the DHLab space for a minimum of two hours per week. On top of this, consultants may elect, in conversation with the DHLab, to work for up to eight additional paid hours completing their own digital projects or training in particular DH project roles (project management, technical writing, etc.) or methodologies. Consultants will have access to DHLab space, equipment, and staff mentorship for completing this work and training.  
+### Need for Vectorized Automatic Differentiation
 
-To apply, please check the [student employment portal](https://www.yalestudentjobs.org/).  
+In forward mode AD, the restriction is that the function can only be differentiated with respect to a single input variable. However, in many cases, it is desirable to differentiate a function with respect to multiple input variables. One way to do this is to use a vectorized version of forward mode AD.
+
+Without vector mode, for computing derivative of a function with n-dimensional input - forward mode requires n forward passes, i.e. one for each input variable. In vector mode, all these computations are batched together and computed in a single forward pass and the function is differentiated with respect to multiple input variables. This helps reduce the overhead of computing an expensive operation in multiple forward passes. It also helps utilize the vectorization capabilities of the hardware.
+
+The output of the function is a vector of partial derivatives with respect to each input variable. Currently, Clad only supports the vectorized version of forward mode AD. This similar approach supports a vectorized version of reverse mode AD as well.
