@@ -80,7 +80,6 @@ Different grid layouts (columns and boxes) that can be utilized when displaying 
 
 - mobile_hero.html: renders Mobile hero/background image.
 
-
 ### _includes\json
 
 Creates JSONs out of iterated items (date, title, url, etc.).
